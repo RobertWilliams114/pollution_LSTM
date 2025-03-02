@@ -5,3 +5,5 @@
 pollution_LSTM_Copy.ipynb
 pollution_LSTM.py
 pyvenv.cfg
+.DS_Store
+.gitattributes
