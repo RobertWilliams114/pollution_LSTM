@@ -1,0 +1,7 @@
+/bin
+/include
+/lib
+/share
+pollution_LSTM_Copy.ipynb
+pollution_LSTM.py
+pyvenv.cfg
