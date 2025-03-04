@@ -3,8 +3,8 @@
 This repository contains an LSTM (Long Short-Term Memory) model for forecasting pollution levels. The project utilizes time series data to predict future pollution metrics and is designed to aid environmental monitoring and analysis.
 
 ## Features
-- **Time Series Forecasting:** Uses LSTM neural netwoeks to predict pollution levels.
-- **Data Preprocessing:** Includes scirpts for data cleaning and normalization.
+- **Time Series Forecasting:** Uses LSTM neural networks to predict pollution levels.
+- **Data Preprocessing:** Includes scripts for data cleaning and normalization.
 - **Model Evaluation:** Compares predicted values with actual data.
 - Visualization:** Generates plots to visualize predictions versus real measurements.
 
