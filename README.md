@@ -1,56 +1,62 @@
-# Pollution LSTM
+## Pollution LSTM
 
-This repository contains an LSTM (Long Short-Term Memory) model for forecasting pollution levels. The project utilizes time series data to predict future pollution metrics and is designed to aid environmental monitoring and analysis.
+![LSTM Prediction](./plots/prediction_viz.png)
 
-## Features
-- **Time Series Forecasting:** Uses LSTM neural networks to predict pollution levels.
-- **Data Preprocessing:** Includes scripts for data cleaning and normalization.
-- **Model Evaluation:** Compares predicted values with actual data.
-- Visualization:** Generates plots to visualize predictions versus real measurements.
+# Air Pollution Forecasting with LSTM
 
-## Technologies Used
-- Python 3.7+
-- Deep Learning Framework (TensorFlow/Keras or PyTorch)
-- Data Manipulation Libraries (Pandas, NumPy)
-- Visualization (Matplotlib)
+A time series forecasting project that leverages Long Short-Term Memory (LSTM) neural networks to predict future air pollution levels, aiding environmental monitoring and decision-making.
 
-## Dataset
-This project uses a pollution dataset (e.g., from [here](https://www.kaggle.com/datasets/bappekim/air-pollution-in-seoul)). Ensure that the dataset is placed in the correct directory or update the data path in the code accordingly.
+---
 
-## Getting Started
+## 📂 Project Structure
 
-### Prerequisites
-- Python 3.7 or higher
-- Required libraries listed in `requirements.txt`
+```bash
+pollution_LSTM/
+├── data/                     # Raw & processed CSV datasets
+├── notebooks/                # Jupyter notebooks for exploration & modeling
+├── models/                   # Saved model weights and artifacts
+├── requirements.txt          # Python dependencies
+├── preprocess.py             # Data cleaning & normalization scripts
+├── train.py                  # Model training script
+├── evaluate.py               # Evaluation & visualization scripts
+└── README.md                 # This overview
+```
 
-### Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/RobertWilliams114/pollution_LSTM.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd pollution_LSTM
-   ```
-3. Install the required dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+---
 
-## Usage
-1. Data Preprocessing: Run the preprocessing script if needed:
-   ```bash
-   python preprocess.py
-   ```
-2. Training the Model: Train the LSTM model by executing:
-   ```bash
-   python train.py
-   ```
-3. Evaluation: Generate predictions and evaluate the model:
-   ```bash
-   python evaluate.py
-   ```
-4. Visualization: The evaluation script will produce plots comparing actual vs. predicted pollution levels.
+## 🔨 Technologies & Why I Chose Them
 
-## Thank You
-Thank you for reading. I hope that you learned something new or gained something of value.
+- **Python & Jupyter Notebook**: Interactive data exploration and iterative development.
+- **TensorFlow 2.x & Keras**: High-level APIs for building and training LSTM networks efficiently.
+- **Pandas & NumPy**: Robust data manipulation and numerical operations.
+- **Matplotlib & Seaborn**: Visualize time series and model performance metrics.
+- **scikit-learn**: Preprocessing utilities and performance evaluation metrics.
+
+---
+
+## 🚀 Getting Started
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/RobertWilliams114/pollution_LSTM.git
+
+# 2. Install dependencies
+pip install -r requirements.txt
+
+# 3. Preprocess data
+python preprocess.py --input data/raw.csv --output data/processed.csv
+
+# 4. Train the model
+python train.py --data data/processed.csv --epochs 50
+
+# 5. Evaluate & visualize
+python evaluate.py --model models/lstm.h5 --data data/processed.csv
+```
+
+---
+
+## 📊 Model Performance
+- R-Squared value of PM2.5 = .88
+- R-Squared value of PM10 = .81
+
+---
