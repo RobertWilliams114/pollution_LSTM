@@ -1,7 +1,5 @@
 ## Pollution LSTM
 
-![LSTM Prediction](./plots/prediction_viz.png)
-
 # Air Pollution Forecasting with LSTM
 
 A time series forecasting project that leverages Long Short-Term Memory (LSTM) neural networks to predict future air pollution levels, aiding environmental monitoring and decision-making.
